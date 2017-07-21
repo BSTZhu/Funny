@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Funny</string>
+
+    <!-- 首页 -->
+    <string name="platform_home_tab_home">首页</string>
+    <string name="platform_home_tab_person">我的</string>
+
+    <!-- Login -->
+    <string name="login_username_hint">电子邮箱/手机号/账号</string>
+    <string name="login_password_hint">密码</string>
+    <string name="login_forgot_password">忘记密码</string>
+    <string name="login_user_login">登陆</string>
+</resources>

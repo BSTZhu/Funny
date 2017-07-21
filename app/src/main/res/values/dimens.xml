@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_title">17sp</dimen>
+    <dimen name="text_important">15sp</dimen>
+    <dimen name="text_primary">14sp</dimen><!-- 字体大小 14sp 正文 text-->
+    <dimen name="text_secondary">12sp</dimen>
+    <dimen name="text_tertiary">11sp</dimen>
+    <dimen name="text_smallest">10sp</dimen>
+    <dimen name="text_section">15sp</dimen>
+
+    <dimen name="input_height">48dp</dimen>
+    <dimen name="list_item_height">47dp</dimen>
+    <dimen name="section_title_height">37dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 图片 缩略图 -->
+    <dimen name="pcs_img_width">60dp</dimen>
+    <dimen name="pcs_img_heigh">60dp</dimen>
+    <dimen name="claim_img_up_thumbnail">65dp</dimen>
+</resources>

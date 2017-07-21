@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <com.free.funny.webview.widget.WebViewEx
+        android:id="@+id/wv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.customization.dragableview.DragableView
+            android:id="@+id/dv_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:bigIconSrc="@drawable/pre_bubble_big"
+            app:iconHeight="35dp"
+            app:iconWidth="35dp"
+            app:smallIconSrc="@drawable/pre_bubble_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingBottom="2dp"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_smallest" />
+
+        </com.customization.dragableview.DragableView>
+
+        <View style="@style/CommonVLine" />
+
+        <com.customization.dragableview.DragableView
+            android:id="@+id/dv_person"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:bigIconSrc="@drawable/pre_person_big"
+            app:iconHeight="35dp"
+            app:iconWidth="35dp"
+            app:smallIconSrc="@drawable/pre_person_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingBottom="2dp"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_smallest" />
+
+        </com.customization.dragableview.DragableView>
+
+    </LinearLayout>
+</RelativeLayout>

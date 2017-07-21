@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/platform_activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/home_bottom_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.customization.dragableview.DragableView
+                android:id="@+id/dv_bottom_home"
+                style="@style/HomeBottomButton"
+                app:bigIconSrc="@drawable/pre_bubble_big"
+                app:iconHeight="30dp"
+                app:iconWidth="30dp"
+                app:smallIconSrc="@drawable/pre_bubble_small">
+
+                <TextView
+                    style="@style/HomeBottomText"
+                    android:text="@string/platform_home_tab_home" />
+
+            </com.customization.dragableview.DragableView>
+
+            <com.customization.dragableview.DragableView
+                android:id="@+id/dv_bottom_person"
+                style="@style/HomeBottomButton"
+                app:bigIconSrc="@drawable/pre_person_big"
+                app:iconHeight="30dp"
+                app:iconWidth="30dp"
+                app:smallIconSrc="@drawable/pre_person_small">
+
+                <TextView
+                    style="@style/HomeBottomText"
+                    android:text="@string/platform_home_tab_person" />
+
+            </com.customization.dragableview.DragableView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_home_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_bottom_bar"
+            android:background="@color/common_bg"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/fl_person_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_bottom_bar"
+            android:background="@color/common_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
