@@ -3,7 +3,7 @@
 
     <!-- 首页 -->
     <string name="platform_home_tab_home">首页</string>
-    <string name="platform_home_tab_person">我的</string>
+    <string name="platform_home_tab_workbench">工作台</string>
 
     <!-- Login -->
     <string name="login_username_hint">电子邮箱/手机号/账号</string>

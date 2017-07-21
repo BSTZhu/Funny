@@ -34,7 +34,7 @@
             </com.customization.dragableview.DragableView>
 
             <com.customization.dragableview.DragableView
-                android:id="@+id/dv_bottom_person"
+                android:id="@+id/dv_bottom_workbench"
                 style="@style/HomeBottomButton"
                 app:bigIconSrc="@drawable/pre_person_big"
                 app:iconHeight="30dp"
@@ -43,7 +43,7 @@
 
                 <TextView
                     style="@style/HomeBottomText"
-                    android:text="@string/platform_home_tab_person" />
+                    android:text="@string/platform_home_tab_workbench" />
 
             </com.customization.dragableview.DragableView>
         </LinearLayout>

@@ -38,7 +38,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
     private HomeFragment mHomeFragment;
     private PersonInfoFragment mPersonInfoFragment;
     private DragableView dv_bottom_home;
-    private DragableView dv_bottom_person;
+    private DragableView dv_bottom_workbench;
     private FrameLayout fl_home_container;
     private FrameLayout fl_person_container;
     private CoordinatorLayout platform_activity_home;
@@ -65,7 +65,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         fl_home_container = (FrameLayout) findViewById(R.id.fl_home_container);
         fl_person_container = (FrameLayout) findViewById(R.id.fl_person_container);
         dv_bottom_home = (DragableView) findViewById(R.id.dv_bottom_home);
-        dv_bottom_person = (DragableView) findViewById(R.id.dv_bottom_person);
+        dv_bottom_workbench = (DragableView) findViewById(R.id.dv_bottom_workbench);
         dv_bottom_home.setBigIcon(R.drawable.bubble_big);
         dv_bottom_home.setSmallIcon(R.drawable.bubble_small);
     }
@@ -81,7 +81,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
 
     private void initData() {
         dv_bottom_home.setOnClickListener(this);
-        dv_bottom_person.setOnClickListener(this);
+        dv_bottom_workbench.setOnClickListener(this);
 
         int[] menuIcons = new int[]{R.drawable.clock, R.drawable.clock, R.drawable.clock, R.drawable.clock};
         final String[] menuItems = new String[]{"我的超级会员", "QQ钱包", "个性装扮", "我的收藏"};
@@ -132,8 +132,8 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
     private void resetIcon() {
         dv_bottom_home.setBigIcon(R.drawable.pre_bubble_big);
         dv_bottom_home.setSmallIcon(R.drawable.pre_bubble_small);
-        dv_bottom_person.setBigIcon(R.drawable.pre_person_big);
-        dv_bottom_person.setSmallIcon(R.drawable.pre_person_small);
+        dv_bottom_workbench.setBigIcon(R.drawable.pre_person_big);
+        dv_bottom_workbench.setSmallIcon(R.drawable.pre_person_small);
     }
 
     @Override
@@ -145,9 +145,9 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
                 dv_bottom_home.setSmallIcon(R.drawable.bubble_small);
                 showHomeFragment();
                 break;
-            case R.id.dv_bottom_person:
-                dv_bottom_person.setBigIcon(R.drawable.person_big);
-                dv_bottom_person.setSmallIcon(R.drawable.person_small);
+            case R.id.dv_bottom_workbench:
+                dv_bottom_workbench.setBigIcon(R.drawable.person_big);
+                dv_bottom_workbench.setSmallIcon(R.drawable.person_small);
                 showPersonInfoFragment();
                 break;
         }
